@@ -1,0 +1,33 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Mi Primera API con Swagger",
+      "version": "1.0.0",
+      "description": "Documentación de mi API usando Swagger"
+    },
+    "servers": [
+      {
+        "url": "http://localhost:3000",
+        "description": "Servidor local"
+      }
+    ],
+    "paths": {
+      "/home": {
+        "get": {
+          "summary": "Endpoint de bienvenida",
+          "description": "Retorna un mensaje de bienvenida",
+          "responses": {
+            "200": {
+              "description": "Respuesta exitosa",
+              "content": {
+                "text/plain": {
+                  "example": "Este será mi primer API"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
